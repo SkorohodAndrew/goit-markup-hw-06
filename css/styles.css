@@ -196,7 +196,6 @@ p {
   align-items: center;
 }
 .hero-button {
-  position: relative;
   width: 200px;
   padding: 10px 32px 10px 31px;
   border: transparent;
@@ -514,7 +513,7 @@ text-transform: uppercase;
 
       /* fotter-chek */
 
-.wer{
+.label-item{
   position: relative;
 
 }
@@ -527,11 +526,29 @@ text-transform: uppercase;
   background-color: var(--primaty-bc-color);
   border: 1px solid rgba(255, 255, 255, 0.3)
 }
+.label-item input{
+  padding: 15px 26px 15px;
 
+  
+}
+.hero-button-ft{
+  position: relative;
+    width: 200px;
+    padding: 10px 62px 10px 29px;
+    border: transparent;
+    background-color: var(--accent-color);
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border-radius: 4px
+}
 .hero-button-icon{
   position: absolute;
   top: 50%;
-  left: 93%;
+  left: 91%;
   transform: translateY(-50%);
 
   display: inline-block;
