@@ -416,7 +416,13 @@ text-transform: uppercase;
   background-color: var(--primaty-bc-color);
   padding: 60px 0;
 }
-
+.footer-colum {
+  display: flex;
+  align-items: baseline;
+}
+.footer-colum-list {
+  margin-right: 70px;
+}
 .header-secondary {
   display: inline-block;
   font-family: var(--secondary-font);
@@ -476,7 +482,13 @@ text-transform: uppercase;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
+      /* footer-icon */
+.footer-icon {
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  margin-right: 93px;
+}
 .media-list {
   display: flex;
 }
@@ -498,21 +510,22 @@ text-transform: uppercase;
 .media-item:focus {
   background-color: var(--accent-color);
 }
-.footer-list {
-  display: flex;
+
+      /* fotter-chek */
+.label-text{
+  width: 358px;
+  height: 50px;
+  margin-right:12px ;
+  border-radius: 4px;
+  background-color: var(--primaty-bc-color);
+  border: 1px solid rgba(255, 255, 255, 0.3)
 }
-.footer-icon {
-  justify-content: center;
-  align-content: center;
-  flex-direction: row;
-}
-.footer-colum {
-  display: flex;
-  align-items: baseline;
-}
-.footer-colum-list {
-  margin-right: 70px;
-}
+
+
+
+
+
+
 /* ПОРТФОЛИО */
 .site-nav .currently {
   color: var(--accent-color);
