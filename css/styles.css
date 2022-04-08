@@ -729,13 +729,14 @@ text-transform: uppercase;
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
 }
+
+/* Контент модального окна */
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
 
 
-  padding: 15px;
   width: 528px;
   height: 581px;
 
@@ -757,4 +758,54 @@ text-transform: uppercase;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--title-bc-color);
   border-radius: 50%;
+}
+.modal-close:hover,
+.modal-close:focus{
+  fill: var(--accent-color);
+}
+.modal-text{
+  margin: 40px 39px 30px 41px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.form-field{
+  display: block;
+  position: relative;
+  margin: 0 39px 28px 41px;
+
+}
+.form-field input{
+  width: 448px;
+  height: 40px;
+}
+.form-label{
+  position: absolute;
+  top: -48px;
+  left: 0;
+  transform: translateY(48px);
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+}
+
+.modal-btn{
+    width: 200px;
+    padding: 10px 56px 10px 55px;
+    margin: 0 163px 0 165px;
+    border: transparent;
+    background-color: var(--accent-color);
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border-radius: 4px
 }
