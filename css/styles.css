@@ -478,7 +478,7 @@ text-transform: uppercase;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -525,6 +525,13 @@ text-transform: uppercase;
   border-radius: 4px;
   background-color: var(--primaty-bc-color);
   border: 1px solid rgba(255, 255, 255, 0.3)
+}
+
+.label-text::placeholder{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
 }
 .label-item input{
   padding: 15px 26px 15px;
@@ -732,6 +739,7 @@ text-transform: uppercase;
 
 /* Контент модального окна */
 .modal {
+  padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -763,49 +771,97 @@ text-transform: uppercase;
 .modal-close:focus{
   fill: var(--accent-color);
 }
+
+textarea {
+  resize: none;
+}
+
 .modal-text{
-  margin: 40px 39px 30px 41px;
+ margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-
-.form-field{
-  display: block;
+.hero-span-position {
   position: relative;
-  margin: 0 39px 28px 41px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+
+.hero-form-field{
+    position: relative;
+    display: flex;
+    flex-direction: column;
 
 }
-.form-field input{
-  width: 448px;
-  height: 40px;
-}
-.form-label{
-  position: absolute;
-  top: -48px;
-  left: 0;
-  transform: translateY(48px);
-
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
+.hero-form-label{
   color: var(--secondary-text-color);
 }
 
-.modal-btn{
-    width: 200px;
-    padding: 10px 56px 10px 55px;
-    margin: 0 163px 0 165px;
-    border: transparent;
-    background-color: var(--accent-color);
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    border-radius: 4px
+.hero-span-input{
+      width: 100%;
+      height: 40px;
+      margin: 0;
+      padding: 0;
+      padding-left: 42px;
+      outline: transparent;
+      
+      color: var(--primary-text-color);
+      
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      box-sizing: border-box;
+      border-radius: 4px;
+      
+      transition: border 250ms var(--kubik-rubik);
+
+}
+
+.hero-form-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--primare-text-color);
+}
+.hero-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  fill: var(--primary-text-color);
+  transition: fill 250ms var();
+
+}
+
+.form-textarea{
+  width: 100%;
+  height: 120px;
+}
+
+.hero-form-textarea{
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+
+.hero-button-ft {
+  position: relative;
+  width: 200px;
+  padding: 10px 62px 10px 29px;
+  border: transparent;
+  background-color: var(--accent-color);
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-radius: 4px
 }
