@@ -48,6 +48,17 @@ p {
   padding: 0;
   margin: 0;
 }
+.checkbox {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  bottom: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  position: absolute;
+}
 
 .container {
   width: 1200px;
@@ -523,6 +534,7 @@ text-transform: uppercase;
   height: 50px;
   margin-right:12px ;
   border-radius: 4px;
+  outline: transparent;
   background-color: var(--primaty-bc-color);
   border: 1px solid rgba(255, 255, 255, 0.3)
 }
@@ -766,6 +778,7 @@ text-transform: uppercase;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--title-bc-color);
   border-radius: 50%;
+  transition: fill 250ms var(--timing-function);
 }
 .modal-close:hover,
 .modal-close:focus{
@@ -785,7 +798,6 @@ textarea {
   color: var(--primary-text-color);
 }
 .hero-span-position {
-  position: relative;
   margin-top: 4px;
   margin-bottom: 10px;
 }
@@ -797,34 +809,54 @@ textarea {
     flex-direction: column;
 
 }
-.hero-form-label{
+
+.hero-form-field .hero-form-label {
   color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
 }
+
+
+
+.hero-form-field:focus-within > .hero-form-icon{
+ fill: var(--accent-color);
+}
+
 
 .hero-span-input{
-      width: 100%;
-      height: 40px;
-      margin: 0;
-      padding: 0;
-      padding-left: 42px;
-      outline: transparent;
+width: 100%;
+height: 40px;
+margin: 0;
+padding: 0;
+padding-left: 42px;
+outline: transparent;
+cursor: pointer;
+border-radius: 5px;
+color: var(--primary-text-color);
+
+border: 1px solid rgba(33, 33, 33, 0.2);
+box-sizing: border-box;
+border-radius: 4px;
+transition: border 250ms var(--timing-function);
       
-      color: var(--primary-text-color);
       
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      box-sizing: border-box;
-      border-radius: 4px;
-      
-      transition: border 250ms var(--kubik-rubik);
 
 }
+.hero-span-input:focus{
+border: 1px solid var(--accent-color);
+}
+
 
 .hero-form-label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-
   color: var(--primare-text-color);
+}
+.hero-position{
+  position: relative;
 }
 .hero-form-icon {
   position: absolute;
@@ -835,26 +867,105 @@ textarea {
   display: inline-block;
   width: 18px;
   height: 18px;
-  fill: var(--primary-text-color);
-  transition: fill 250ms var();
+
+  transition: fill 250ms var(--timing-function);
+
 
 }
+.hero-position:focus-within>.hero-form-icon {
+  fill:var(--accent-color);
+
+}
+
+
+
 
 .form-textarea{
   width: 100%;
   height: 120px;
+ padding: 16px;
+  outline: transparent;
+  border-radius: 5px;
+  color: var(--primary-text-color);
+  
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border 250ms var(--timing-function);
+}
+
+.form-textarea:focus {
+  border: 1px solid var(--accent-color);
 }
 
 .hero-form-textarea{
   margin-top: 4px;
   margin-bottom: 10px;
+  
+}
+.form-textarea::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.hero-form-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 
-.hero-button-ft {
-  position: relative;
+.checkbox-lebel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-icon{
+  display: inline-block;
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  border-radius: 4px;
+  border: 2px solid var(--primary-text-color);
+  background-origin: content-box;
+}
+
+.checkbox:checked + .checkbox-icon{
+  background-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  background-image: url(../images/icon/icon-check.svg);
+ background-size: contain;
+  background-origin: border-box; 
+}
+
+
+
+
+.hero-form-text{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+
+.modal-link{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+
+.modal-button-md{
   width: 200px;
-  padding: 10px 62px 10px 29px;
+  padding: 10px 55px 10px 56px;
   border: transparent;
   background-color: var(--accent-color);
   color: var(--title-text-color);
