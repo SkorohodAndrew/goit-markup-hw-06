@@ -401,14 +401,15 @@
             <div class="fotter-chek">
                 <h3 class="footer-title">Подпишитесь на рассылку</h3>
                 <div class="label-item">
-                    <form class="form">
+                    <form class="form-footer">
                         <label class="label-ft-email">
                             <input class="label-text" type="email" name="email" placeholder="E-mail">
                         </label>
 
-                        <button class="hero-button-ft" type="submit">Подписаться</button>
-                        <svg class="hero-button-icon">
-                            <use href="./images/icon/symbol-defs.svg#icon-send" width="24" height="24"></use>
+                        <button class="hero-button-ft" type="submit">Подписаться
+                            <svg class="hero-button-icon">
+                                <use href="./images/icon/symbol-defs.svg#icon-send" width="24" height="24"></use>
+                        </button>
                         </svg>
                     </form>
                 </div>
@@ -466,7 +467,7 @@
                 </span>
             </label>
 
-            <label class="hero-form-field">
+            <label class="hero-form-field hero-from-field-modal">
                 <span class="hero-form-label">Комментарий</span>
                 <span class="hero-form-textarea">
                     <textarea class="form-textarea" name="comment" rows="10" placeholder="Введите текст"></textarea>
@@ -474,22 +475,18 @@
             </label>
 
 
-            <ul class="list">
-                <li class="hero-form-item">
-                    <label class="checkbox-lebel">
-                        <input class="checkbox" type="checkbox" name="topic">
-                        <span class="checkbox-icon" ></span>
-                        <span class="hero-form-text">Сoглашаюсь с рассылкой и принимаю <a href=""
-                                class="modal-link">Условия договора</a></span>
-                    </label>
-                </li>
 
+            <label class="checkbox-lebel">
+                <input class="checkbox" type="checkbox" name="topic">
+                <span class="checkbox-icon"></span>
+                <span class="hero-form-text">Сoглашаюсь с рассылкой и принимаю <a href="" class="modal-link">Условия
+                        договора</a></span>
+            </label>
 
+            <label class="checkbox-lebel">
+                <button class="modal-button-md" type="submit">Отправить</button>
+            </label>
 
-                <li class="hero-form-item">
-                    <button class="modal-button-md" type="submit">Отправить</button>
-                </li>
-            </ul>
         </form>
 
 
