@@ -771,7 +771,7 @@ img {
   height: 100%;
 
   transform: translateY(100%);
-  transition: transform 250ms var(--timing-function);
+  transition: transform 2250ms var(--timing-function);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
